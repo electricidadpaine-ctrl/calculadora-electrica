@@ -1,0 +1,6 @@
+{
+  "name": "RIC Electrical Calc",
+  "description": "Calculadoras Eléctricas Gratuitas según normativa RIC (Chile), incluye cálculo de caída de tensión, potencia y corriente, leyes de Watt, y equivalencia de conductores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

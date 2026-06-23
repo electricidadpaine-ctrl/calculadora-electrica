@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #14115c;
+  --color-primary-container: #2b2a71;
+  --color-on-primary-container: #9594e2;
+  --color-secondary: #785a00;
+  --color-secondary-container: #fdcb52;
+  --color-on-secondary-container: #725500;
+  --color-background: #f7f9ff;
+  --color-surface: #f7f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f4f9;
+  --color-surface-container: #ebeef3;
+  --color-surface-container-high: #e5e8ee;
+  --color-surface-container-highest: #e0e3e8;
+  --color-on-surface: #181c20;
+  --color-on-surface-variant: #464650;
+  --color-outline: #777682;
+  --color-outline-variant: #c8c5d2;
+  --color-secondary-fixed: #ffdf9c;
+  
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-headline: "Montserrat", system-ui, sans-serif;
+}
+
+/* Background Grid Pattern */
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(20, 17, 92, 0.035) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(20, 17, 92, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@keyframes gridFlow {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(32px); }
+}
+
+.animate-grid-flow {
+  animation: gridFlow 25s linear infinite;
+}
+
+/* Interactive Card Effects */
+.calculation-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--color-outline-variant);
+}
+
+.calculation-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -8px rgba(20, 17, 92, 0.12);
+  border-color: rgba(20, 17, 92, 0.25);
+}
+
+.input-focus-ring:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(20, 17, 92, 0.08);
+}
+
